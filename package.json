@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d src/dist",
+    "deploy": "npm run build && gh-pages -d src/dist",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js, jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
